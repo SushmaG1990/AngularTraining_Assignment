@@ -1,0 +1,10 @@
+.container{
+    border-style :outset; 
+    padding: 10px;
+    margin: 10px;
+    background-color: lightgrey
+}
+
+.alignright{
+    padding: 25px;
+}

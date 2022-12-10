@@ -1,0 +1,16 @@
+<div class="container" >
+   
+    <button (click)="addNewPost()" class="container" style="width: 30%; height: 50px; background-color:#E8EDF2">Add New Post</button>        
+    
+    <div *ngIf="visibleAddPost">
+        <div class="container">              
+                <label for="title">Title</label>
+                <input type="text" #title="ngModel" [(ngModel)]="post.title" name="title" id="title" style="margin-left:25px;" > 
+                <br/><br/> 
+                <label for="content">Content</label>
+                <textarea #content="ngModel" [(ngModel)]="post.content" name="content" id="content" style="margin-left:5px;"></textarea> 
+                <br/><br/> 
+                <button (click)="postHere()" >Post Here</button>       
+        </div>
+    </div>
+</div>
